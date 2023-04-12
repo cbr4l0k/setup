@@ -107,9 +107,8 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # some more ls aliases
-alias la='ls -lha'
-alias l='ls -CF'
-alias em='emacs -nw'
+alias la='lsd -lha'
+alias l='lsd -CF'
 alias dd='dd status=progress'
 alias _='sudo'
 alias _i='sudo -i'
@@ -136,24 +135,17 @@ fi
 
 
 # A L I A S E S
-alias ll='ls -alF'
+alias ll='lsd -alF'
 alias sdn="shutdown now"
 alias rbn="shutdown -r now"
 alias kk="pkill -KILL"
 alias mouse="mate-mouse-properties"
 
-alias urssh="ssh -i /home/lchmn/.ssh/gqct.pem gqct@loginpub-hpc.urosario.edu.co -p 53841"
-alias jtssh="ssh -i /home/lchmn/.ssh/jtorres.pem jtorres@loginpub-hpc.urosario.edu.co -p 53841"
-alias urscp="scp -r -P 53841 -i /home/lchmn/.ssh/gqct.pem gqct@loginpub-hpc.urosario.edu.co:"
-alias usfq="ssh -oKexAlgorithms=+diffie-hellman-group1-sha1 quimica@192.188.53.62"
-
-alias less="/home/lchmn/.local/bin/batcat"
-alias cat="/home/lchmn/.local/bin/batcat -p --paging=never"
+alias less="/usr/bin/bat"
+alias cat="/usr/bin/bat -p --paging=never"
 
 alias doc="cd ~/Documents/"
-alias htb="cd ~/Documents/htb/"
 alias dl="cd ~/Downloads/"
-alias vpn="cd ~/.vpn/"
 
 alias aslr_on='echo 2 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias aslr_off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
@@ -174,4 +166,3 @@ PS1='\[\e[0m\][\[\e[0m\]$?\[\e[0m\]]\[\e[0m\][\[\e[0m\]\u\[\e[0m\]|\[\e[0m\]\h\[
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-. "$HOME/.cargo/env"
