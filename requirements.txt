@@ -6,6 +6,7 @@ jupyter
 jupyter-client
 jupyter-console
 jupyter-core
+jupyterlab
 jupyterlab-pygments
 jupyterlab-widgets
 matplotlib
