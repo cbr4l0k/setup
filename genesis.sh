@@ -28,6 +28,7 @@ pick_os_and_run
 
 # Symbolic links of config files
 find "$(pwd)/config" -mindepth 1 -maxdepth 1 -type d -exec ln -sf {} $HOME/.config/ \;
-
+# Symbolic links of dotfiles
+find "$(pwd)/dotfiles" -mindepth 1 -maxdepth 1 -type d -exec ln -sf {} $HOME/ \;
 
 
