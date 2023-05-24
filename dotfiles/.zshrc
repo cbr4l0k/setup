@@ -104,5 +104,7 @@ alias ls='lsd'
 alias ll='lsd -la'
 alias doc='cd $HOME/Documents/'
 alias dl='cd $HOME/Downloads/'
+alias sdn='shutdown now'
+alias rbn='shutdown now -r'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
