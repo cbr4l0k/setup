@@ -1,8 +1,8 @@
 #!/bin/bash
 
+# Config. github 
 read -p "Github username: " USERNAME
 read -p "Github email: " USEREMAIL
-
 git config --global user.name $USERNAME
 git config --global user.email $USEREMAIL
 
@@ -33,6 +33,11 @@ pick_os_and_run() {
 # Install dependencies depending on the os
 pick_os_and_run
 
+# Config second brain
+pushd $HOME/Documents
+git clone https://github.com/cbr4l0k/cbr4l0k 
+popd
+
 # Symbolic links of personal scripts
 find "$(pwd)/scripts" -mindepth 1 -maxdepth 1 -type f -exec chmod +x {} \;
 find "$(pwd)/scripts" -mindepth 1 -maxdepth 1 -exec ln -sf {} $HOME/.local/bin/ \;
@@ -47,7 +52,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Install zsh theme: spaceship
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
 
 # Add NeRD fonts
 mkdir -p ~/.fonts

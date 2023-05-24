@@ -1,0 +1,23 @@
+[Alacritty.desktop][Global Shortcuts]
+New=Meta+Return
+_launch=
+
+[brave-browser.desktop][Global Shortcuts]
+_launch=
+new-private-window=Meta+Shift+G
+new-window=Meta+G
+
+[echo.desktop][Global Shortcuts]
+_launch=Meta+Shift+C
+
+[rofi_emoji.desktop][Global Shortcuts]
+_launch=Meta+Shift+E
+
+[rofi_run.desktop][Global Shortcuts]
+_launch=Meta+Shift+Return
+
+[rofi_web_search.desktop][Global Shortcuts]
+_launch=Meta+Shift+S
+
+[web-search.sh.desktop][Global Shortcuts]
+_launch=Meta+Shift+W
