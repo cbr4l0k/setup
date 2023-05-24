@@ -33,6 +33,9 @@ pick_os_and_run() {
 # Install dependencies depending on the os
 pick_os_and_run
 
+# Set defaults
+xdg-settings set default-web-browser brave-browser.desktop
+
 # Config second brain
 pushd $HOME/Documents
 git clone https://github.com/cbr4l0k/cbr4l0k 

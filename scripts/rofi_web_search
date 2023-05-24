@@ -3,9 +3,8 @@
 # -----------------------------------------------------------------------------
 # Info:
 #   author:    Miroslav Vidovic
-#   author:    cbr4l0k (yo puse wikipedia xd)
-#   file:      web-search.sh
-#   created:   24.02.2017.-08:59:54
+#   author:    cbr4l0k (yo puse wikipedia, y otros xd)
+#   file:      web-search.sh created:   24.02.2017.-08:59:54
 #   revision:  ---
 #   version:   1.0
 # -----------------------------------------------------------------------------
@@ -42,6 +41,8 @@ URLS=(
   # New
   ["wikipedia"]="https://en.wikipedia.org/wiki/Special:Search?search="
   ["arch repo"]="https://aur.archlinux.org/packages?K="
+  ["animeflv"]="https://www3.animeflv.net/browse?q="
+  ["hugging face"]="https://huggingface.co/search/full-text?q="
 )
 
 # List for rofi
