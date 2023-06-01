@@ -12,10 +12,10 @@ env:
   TERM: xterm-256color
 window:
   decorations: none
-  opacity: 0.9
+  opacity: 0.85
   padding:
     x: 50
     y: 40
-key_bindings:
+term_key_bindings:
   - { key: L, mods: Control, chars: "/usr/bin/clear && ls \x0D" }
   - { key: H, mods: Control|Shift, chars: "history | cat -l bash \x0D" }

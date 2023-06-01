@@ -39,10 +39,11 @@ URLS=(
   ["youtube"]="https://www.youtube.com/results?search_query="
   ["vimawesome"]="http://vimawesome.com/?q="
   # New
-  ["wikipedia"]="https://en.wikipedia.org/wiki/Special:Search?search="
-  ["arch repo"]="https://aur.archlinux.org/packages?K="
   ["animeflv"]="https://www3.animeflv.net/browse?q="
+  ["arch repo"]="https://aur.archlinux.org/packages?K="
   ["hugging face"]="https://huggingface.co/search/full-text?q="
+  ["libgen"]="https://libgen.is/search.php?req="
+  ["wikipedia"]="https://en.wikipedia.org/wiki/Special:Search?search="
 )
 
 # List for rofi
@@ -55,7 +56,7 @@ gen_list() {
 
 main() {
   # Pass the list to rofi
-  platform=$( (gen_list) | rofi -dmenu -matching fuzzy -no-custom -location 0 -p "Search > " )
+  platform=$( (gen_list) | rofi -dmenu -matching fuzzy -no-custom -location 0  -p "Search > " )
 
   if [[ -n "$platform" ]]; then
     query=$( (echo ) | rofi  -dmenu -matching fuzzy -location 0 -p "Query > " )

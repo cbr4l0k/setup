@@ -1,0 +1,90 @@
+ls
+ll
+lsd
+ll
+ls -lia
+ls -la
+ls
+doc
+cd Documents/advent_of_code_2022/
+ls
+cd day1/
+ll
+ls
+ls | where size > 172b
+ls | where size > 173b
+ls | where name == 'src'
+clear
+cd
+ls
+ls -a
+ls
+ls -a
+cat > test.txt
+echo "jojojo" > test.txt
+cat test.txt
+ls -a | sort-by modified
+cat .zsh_history
+ls -a | sort-by modified
+cd .config/nushell/
+ls
+vat env.nu
+cat env.nu
+bat env.nu
+ls
+cat history.txt
+cat config.nu
+ls
+$nu.env_path
+$nu.env-path
+nv $nu.env-path
+nvim  $nu.env-path
+nvim $nu.config-path
+cargo install starship --locked
+ls
+cd Documents/nlp/
+ls
+cd p3
+ls
+open cv_results.csv
+ls
+open read.py
+open nlp_data.json
+open nlp_data.json | get columns
+open nlp_data.json | get 
+open nlp_data.json | get -h
+open nlp_data.json | get 2
+open nlp_data.json | get category
+open nlp_data.json | get -h
+ls | get name
+ls
+ls | get name && type
+open nlp_data.json | get -h
+ls | get [name, type]
+$env | get paht
+$env | get path
+ls
+ls 
+cd rebirth/
+ls
+cd config/
+ls
+cd
+ls
+nvim  .zshrc
+ls
+ls | get name 
+ls | get name == paru
+ls | get name == "paru"
+cd Documents/nlp/p3/
+ls
+open nlp_data.json 
+open nlp_data.json | get 1
+ls
+ls | where size < 5.6mb
+ls | where size < 3mb
+ls -raw | where size < 3mb
+ls | where size < 3mb
+cat > test.txt
+echo "jojojo" > test.txt
+ls

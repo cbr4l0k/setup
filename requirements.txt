@@ -23,3 +23,5 @@ selenium
 setuptools-scm
 spotdl
 pulsemixer
+faker
+onesecmail

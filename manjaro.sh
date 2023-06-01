@@ -9,6 +9,7 @@ popd
 
 # Text editors and terminal tools 
 paru -s --noconfirm neovim tmux alacritty-git
+sudo pacman -S nushell starship
 
 # Productivity and Tools
 paru -S --noconfirm obsidian unzip

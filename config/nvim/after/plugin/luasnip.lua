@@ -1,3 +1,12 @@
+-- Check if LuaSnip is installed, and if not, return.
+if not pcall(require, "luasnip") then
+    return
+end
+
+local mapper = function(mode, key, result) 
+    vim.keymap.set(mode, key, result, {noremap = true, silent = true})
+end
+
 local has_words_before = function()
 
    unpack = unpack or table.unpack
@@ -16,7 +25,7 @@ cmp.setup({
 
         -- ... Your other mappings ...
 
-        ["<Tab>"] = cmp.mapping(function(fallback)
+        ["<C-k>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_next_item()
                 -- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable() 
@@ -30,7 +39,7 @@ cmp.setup({
             end
         end, { "i", "s" }),
 
-        ["<S-Tab>"] = cmp.mapping(function(fallback)
+        ["<C-j>"] = cmp.mapping(function(fallback)
             if cmp.visible() then
                 cmp.select_prev_item()
             elseif luasnip.jumpable(-1) then
@@ -45,3 +54,6 @@ cmp.setup({
 
     -- ... Your other configuration ...
 })
+
+mapper("n", "<leader><leader>s", "<cmd>source ~/.config/nvim/after/plugin/luasnip.lua<CR>")
+
