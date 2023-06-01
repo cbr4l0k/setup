@@ -12,7 +12,8 @@ paru -s --noconfirm neovim tmux alacritty-git
 sudo pacman -S nushell starship
 
 # Productivity and Tools
-paru -S --noconfirm obsidian unzip
+paru -S --noconfirm obsidian unzip sudo 
+sudo pacman -S jq w3m
 
 # Programming and Development
 paru -S --noconfirm julia 
